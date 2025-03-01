@@ -1,21 +1,18 @@
-﻿class Music // Classe
+﻿class Music // Classe [usado o pascal case]
 {
-    public string nome;
-    public string artista;
-    public int duracao;
-    private bool disponivel;
+    public string Nome { get; set; } //Atributo / nome de variavel é usado o camel case
+    public string Artista { get; set; }// Atributo
+    public int Duracao { get; set; } // Atributo
+    public bool Disponivel { get; set; } //propriedade [ usado pascal case]
+    public string DescricaoResumida { get; } //criar propriedade [Atalho = prop+tab]
 
-    public void EscreveDisponivel(bool value)
-    {
-        disponivel = value;
-    }
 
-    public void ExibirFichaTecnica()
+    public void ExibirFichaTecnica() // Método
     {
-        Console.WriteLine($"Nome: {nome}");
-        Console.WriteLine($"Artista: {artista}");
-        Console.WriteLine($"Duração: {duracao}");
-        if (disponivel)
+        Console.WriteLine($"Nome: {Nome}"); //Mostrar na tela [Atalho = CW+tab)
+        Console.WriteLine($"Artista: {Artista}");
+        Console.WriteLine($"Duração: {Duracao}");
+        if (Disponivel)
         {
             Console.WriteLine("Disponível no plano");
         }
@@ -27,6 +24,6 @@
 
     public void ExibirMusicaArtista()
     {
-        Console.WriteLine($"Nome da música / artista: {nome}/{artista}");
+        Console.WriteLine($"Nome da música / artista: {Nome}/{Artista}");
     }
 }

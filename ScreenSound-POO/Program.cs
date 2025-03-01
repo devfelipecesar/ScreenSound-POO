@@ -1,21 +1,20 @@
 ﻿Music musica1 = new Music(); //Criação de um objeto
 
-musica1.nome = "Roxane";
-musica1.artista = "The Police";
-musica1.duracao = 273;
-musica1.disponivel = true;
-
+musica1.Nome = "Roxane";
+musica1.Artista = "The Police";
+musica1.Duracao = 273;
+musica1.Disponivel = true;
 
 Music musica2 = new Music();
 
-musica2.nome = "Vertigo";
-musica2.artista = "U2";
-musica2.duracao = 367;
-musica2.disponivel = false;
+musica2.Nome = "Vertigo";
+musica2.Artista = "U2";
+musica2.Duracao = 367;
+musica2.Disponivel = false;
 
 
-//musica1.ExibirFichaTecnica();
-//musica2.ExibirFichaTecnica();
+musica1.ExibirFichaTecnica();
+musica2.ExibirFichaTecnica();
 
-musica1.ExibirMusicaArtista();
-musica2.ExibirMusicaArtista();
+//musica1.ExibirMusicaArtista();
+//musica2.ExibirMusicaArtista();
