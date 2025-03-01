@@ -5,6 +5,8 @@ musica1.Artista = "The Police";
 musica1.Duracao = 273;
 musica1.Disponivel = true;
 
+Console.WriteLine(musica1.DescricaoResumida);
+
 Music musica2 = new Music();
 
 musica2.Nome = "Vertigo";

@@ -4,7 +4,13 @@
     public string Artista { get; set; }// Atributo
     public int Duracao { get; set; } // Atributo
     public bool Disponivel { get; set; } //propriedade [ usado pascal case]
-    public string DescricaoResumida { get; } //criar propriedade [Atalho = prop+tab]
+    public string DescricaoResumida //criar propriedade [Atalho = prop+tab]
+    {
+        get
+        {
+            return $"A música {Nome} pertence à banda {Artista}";
+        }
+    } 
 
 
     public void ExibirFichaTecnica() // Método
