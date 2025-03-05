@@ -1,22 +1,15 @@
-﻿Music musica1 = new Music(); //Criação de um objeto
+﻿Album albumDoQueen = new Album();
+albumDoQueen.Nome = "A nigth at the opera";
 
-musica1.Nome = "Roxane";
-musica1.Artista = "The Police";
-musica1.Duracao = 273;
-musica1.Disponivel = true;
-
-Console.WriteLine(musica1.DescricaoResumida);
+Music musica1 = new Music();
+musica1.Nome = "Love of my Life";
+musica1.Duracao = 213;
 
 Music musica2 = new Music();
+musica2.Nome = "Bohemian Rhapsody";
+musica2.Duracao = 354;
 
-musica2.Nome = "Vertigo";
-musica2.Artista = "U2";
-musica2.Duracao = 367;
-musica2.Disponivel = false;
+albumDoQueen.AdicionarMusica(musica1);
+albumDoQueen.AdicionarMusica(musica2);
 
-
-musica1.ExibirFichaTecnica();
-musica2.ExibirFichaTecnica();
-
-//musica1.ExibirMusicaArtista();
-//musica2.ExibirMusicaArtista();
+albumDoQueen.ExibirMusicasDoAlbum();
