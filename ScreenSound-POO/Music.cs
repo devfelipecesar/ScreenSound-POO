@@ -1,7 +1,14 @@
 ﻿class Music // Classe [usado o pascal case]
 {
-    public string Nome { get; set; } //Atributo / nome de variavel é usado o camel case
-    public string Artista { get; set; }// Atributo
+    // Construtor
+    public Music(Banda artista, string nome)
+    {
+        Artista = artista;
+        Nome = nome;
+    }
+
+    public string Nome { get; } //Atributo / nome de variavel é usado o camel case
+    public Banda Artista { get; }// Atributo
     public int Duracao { get; set; } // Atributo
     public bool Disponivel { get; set; } //propriedade [ usado pascal case]
     //criar propriedade [Atalho = prop+tab]
@@ -10,7 +17,7 @@
     public void ExibirFichaTecnica() // Método
     {
         Console.WriteLine($"Nome: {Nome}"); //Mostrar na tela [Atalho = CW+tab)
-        Console.WriteLine($"Artista: {Artista}");
+        Console.WriteLine($"Artista: {Artista.Nome}");
         Console.WriteLine($"Duração: {Duracao}");
         if (Disponivel)
         {
